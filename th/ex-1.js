@@ -10,8 +10,12 @@
 */
 
 // Start coding here
+function findItemLocation(products, productName) {
+    return index = products.indexOf(productName);
+}
+
 
 const products = ["milk", "bread", "eggs", "butter", "cheese", "orange juice"];
 
-console.log(findIfItemExist(products, "cereal box")); // -1
-console.log(findIfItemExist(products, "eggs")); // 2
+console.log(findItemLocation(products, "cereal box")); // -1
+console.log(findItemLocation(products, "eggs")); // 2

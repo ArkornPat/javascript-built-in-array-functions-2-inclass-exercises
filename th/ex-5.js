@@ -8,6 +8,10 @@
 */
 
 // Start coding here
+function findNLowestNumber(numbers, n) {
+  numbers.sort((a, b) => a - b);
+  return numbers.slice(0, n);
+}
 
 const arrOfNumbers1 = [10, 3, 55, 0, 18];
 let result1 = findNLowestNumber(arrOfNumbers1, 3);
@@ -16,3 +20,13 @@ console.log(result1); // [ 0, 3, 10 ]
 const arrOfNumbers2 = [0, 3, -1, -2, 11];
 let result2 = findNLowestNumber(arrOfNumbers2, 2);
 console.log(result2); // [ -2, -1 ]
+
+function removeChar(str) {
+  //You got this!
+  let a = str.split("");
+  a.pop();
+  a.shift();
+  return a.join("");
+}
+
+console.log(removeChar('eloquent'));
